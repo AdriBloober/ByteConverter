@@ -1,4 +1,8 @@
 # Byte Converter
+[![Build Status for master](https://travis-ci.org/AdriBloober/ByteConverter.svg?branch=master)](https://travis-ci.org/AdriBloober/ByteConverter)
+
+Development Build: [![Build Status](https://travis-ci.org/AdriBloober/ByteConverter.svg?branch=development)](https://travis-ci.org/AdriBloober/ByteConverter)
+
 
 ## Installation
 
