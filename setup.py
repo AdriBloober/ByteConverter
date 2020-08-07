@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="byte_converter",
-    version="0.1.1",
+    version="0.1.2",
     author="AdriBloober",
     author_email="adrianbloober@gmail.com",
     description="Translate python objects to bytes.",
