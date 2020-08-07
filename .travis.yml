@@ -9,10 +9,10 @@ install:
   - python setup.py install
 
 script:
-  - "python tests/test.py"
   - "python -m coverage run --source=byte_converter -m unittest tests/test.py"
-  - "python -m coveralls"
 branches:
   only:
   - master
   - development
+after_success:
+  - "python -m coveralls"

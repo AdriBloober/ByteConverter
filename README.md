@@ -1,8 +1,10 @@
 # Byte Converter
 [![Build Status for master](https://travis-ci.org/AdriBloober/ByteConverter.svg?branch=master)](https://travis-ci.org/AdriBloober/ByteConverter)
+[![Coverage Status](https://coveralls.io/repos/github/AdriBloober/ByteConverter/badge.svg?branch=development)](https://coveralls.io/github/AdriBloober/ByteConverter?branch=master)
+
 
 Development Build: [![Build Status](https://travis-ci.org/AdriBloober/ByteConverter.svg?branch=development)](https://travis-ci.org/AdriBloober/ByteConverter)
-
+[![Coverage Status](https://coveralls.io/repos/github/AdriBloober/ByteConverter/badge.svg?branch=development)](https://coveralls.io/github/AdriBloober/ByteConverter?branch=development)
 
 ## Installation
 
