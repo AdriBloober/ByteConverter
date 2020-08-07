@@ -10,6 +10,8 @@ install:
 
 script:
   - "python tests/test.py"
+  - "coverage run --source=byte_converter -m unittest tests/test.py"
+  - "coveralls"
 branches:
   only:
   - master
