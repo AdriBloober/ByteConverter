@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.6"
+  - "3.7"
+  - "3.8"
+install:
+  - [ -f requirements.txt ] && pip install -r requirements.txt || echo "requirements.txt does not exists"
+  - [ -f dev-requirements.txt ] && pip install -r dev-requirements.txt || echo "dev-requirements.txt does not exists"
+  - python setup.py install
+
+script:
+  - python tests/test.py
