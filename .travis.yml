@@ -10,3 +10,7 @@ install:
 
 script:
   - python tests/test.py
+branches:
+  only:
+  - master
+  - developments
