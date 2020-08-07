@@ -6,11 +6,13 @@
 Development Build: [![Build Status](https://travis-ci.org/AdriBloober/ByteConverter.svg?branch=development)](https://travis-ci.org/AdriBloober/ByteConverter)
 [![Coverage Status](https://coveralls.io/repos/github/AdriBloober/ByteConverter/badge.svg?branch=development)](https://coveralls.io/github/AdriBloober/ByteConverter?branch=development)
 
+[PyPi byte-converter package](https://pypi.org/project/byte-converter)
+
 ## Installation
 
 Install python with version >= 3.6 and pip.
 
-Install package with
+Install package with ([PyPi byte-converter package](https://pypi.org/project/byte-converter))
 ```shell script
 python3 -m pip install --upgrade byte-converter --user
 ```
