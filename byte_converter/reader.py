@@ -107,7 +107,7 @@ type_definition = {
     b"\x04": (str, read_string),
     b"\x05": (list, read_list),
     b"\x06": (dict, read_dict),
-    b"\x07": (None, read_none),
+    b"\x07": (type(None), read_none),
 }
 
 

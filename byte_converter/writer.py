@@ -92,7 +92,7 @@ def check_regex_obj(r, attribute_name):
 
 def obj_to_dict(obj):
     dictionary = {}
-    ignoring_attributes = ["bc_ignore_attributes", "bc_whitelisted_attributes", r"\_.*"]
+    ignoring_attributes = ["bc_ignore_attributes", "3", r"\_.*"]
     if hasattr(obj, "bc_ignore_attributes"):
         ignoring_attributes.extend(obj.bc_ignore_attributes)
     whitelisting = None
@@ -136,7 +136,7 @@ type_definition = {
     b"\x04": (str, write_string),
     b"\x05": (list, write_list),
     b"\x06": (dict, write_dict),
-    b"\x07": (None, write_none),
+    b"\x07": (type(None), write_none),
 }
 
 
@@ -150,9 +150,7 @@ def to_bytes(obj, buffer=None, base64=True):
             v[1](obj, buffer)
             fount = True
             break
-    if obj is None and not fount:
-        buffer.write(b"\x07")
-    elif not fount:
+    if not fount:
         buffer.write(b"\x10")
         write_object(obj, buffer)
     b = buffer.getvalue()
